@@ -2,43 +2,52 @@ package br.com.caelum.modelo;
 
 public class Romano {
 
-	private int numeroInteiro;
-private String numeroRomano;
+	private String numeroInteiro;
+	private String numeroRomano;
 
-	public int getNumeroInteiro() {
+	public String getNumeroInteiro() {
 		return numeroInteiro;
 	}
 
-	public void setNumeroInteiro(int numeroInteiro) {
+	public void setNumeroInteiro(String numeroInteiro) {
 		this.numeroInteiro = numeroInteiro;
 	}
 
 	public String getNumeroRomano() {
 		return numeroRomano;
 	}
-	
-	public void converteInteiroEmRomano()  {
-		// TODO Auto-generated method stub
-		
-		
-		if(this.numeroInteiro==0)
-			
-			throw new RuntimeException("O numero nao pode ser nulo");
-			
-		if(this.numeroInteiro==1) 
-			this.numeroRomano="I";
-/*		switch(this.numeroInteiro){
-		case 1: return "I";
-		case 2: return "II";
-		case 3: return "III";
-		case 4: return "IV";
-		case 5: return "V";*/
-		
-		
+
+	public boolean checkIsIsInteger(String x) {
+
+		try {
+			Integer.parseInt(x);
+			return true;
+		} catch (Exception e) {
+			return false;
+
+		}
 
 	}
 
+	public void converteInteiroEmRomano() {
+		// TODO Auto-generated method stub
 
+		if (this.numeroInteiro == "0") {
 
-	
+			throw new RuntimeException("O numero nao pode ser nulo");
+		} 
+		else if (checkIsIsInteger( this.numeroInteiro)==false) {
+
+			//System.out.print("jentrousidusd");
+			throw new RuntimeException("O numero nao pode ser nulo");
+		}
+
+		else
+
+		if (this.numeroInteiro == "1") {
+			this.numeroRomano = "I";
+		}
+
+	}
+
 }
