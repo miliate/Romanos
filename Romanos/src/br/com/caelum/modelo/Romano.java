@@ -49,75 +49,75 @@ public class Romano {
 	}
 
 	public void conversor() {
-		String numeroConvertidoEmRomano = "";
+		String roman = "";
 		int numeroInteiroASerConvertido = Integer.parseInt(this.numeroInteiro);
 
 		if (numeroInteiroASerConvertido < 4000) {
 			while (numeroInteiroASerConvertido >= 1000) {
-				numeroConvertidoEmRomano += "M";
+				roman += "M";
 				numeroInteiroASerConvertido -= 1000;
 			}
 
 			while (numeroInteiroASerConvertido >= 900) {
-				numeroConvertidoEmRomano += "CM";
+				roman += "CM";
 				numeroInteiroASerConvertido -= 900;
 			}
 
 			while (numeroInteiroASerConvertido >= 500) {
-				numeroConvertidoEmRomano += "D";
+				roman += "D";
 				numeroInteiroASerConvertido -= 500;
 			}
 
 			while (numeroInteiroASerConvertido >= 400) {
-				numeroConvertidoEmRomano += "CD";
+				roman += "CD";
 				numeroInteiroASerConvertido -= 400;
 			}
 
 			while (numeroInteiroASerConvertido >= 100) {
-				numeroConvertidoEmRomano += "C";
+				roman += "C";
 				numeroInteiroASerConvertido -= 100;
 			}
 
 			while (numeroInteiroASerConvertido >= 90) {
-				numeroConvertidoEmRomano += "XC";
+				roman += "XC";
 				numeroInteiroASerConvertido -= 90;
 			}
 
 			while (numeroInteiroASerConvertido >= 50) {
-				numeroConvertidoEmRomano += "L";
+				roman += "L";
 				numeroInteiroASerConvertido -= 50;
 			}
 
 			while (numeroInteiroASerConvertido >= 40) {
-				numeroConvertidoEmRomano += "XL";
+				roman += "XL";
 				numeroInteiroASerConvertido -= 40;
 			}
 
 			while (numeroInteiroASerConvertido >= 10) {
-				numeroConvertidoEmRomano += "X";
+				roman += "X";
 				numeroInteiroASerConvertido -= 10;
 			}
 
 			while (numeroInteiroASerConvertido >= 9) {
-				numeroConvertidoEmRomano += "IX";
+				roman += "IX";
 				numeroInteiroASerConvertido -= 9;
 			}
 
 			while (numeroInteiroASerConvertido >= 5) {
-				numeroConvertidoEmRomano += "V";
+				roman += "V";
 				numeroInteiroASerConvertido -= 5;
 			}
 
 			while (numeroInteiroASerConvertido >= 4) {
-				numeroConvertidoEmRomano += "IV";
+				roman += "IV";
 				numeroInteiroASerConvertido -= 4;
 			}
 
 			while (numeroInteiroASerConvertido >= 1) {
-				numeroConvertidoEmRomano += "I";
+				roman += "I";
 				numeroInteiroASerConvertido -= 1;
 			}
-			this.numeroRomano = numeroConvertidoEmRomano;
+			this.numeroRomano = roman;
 		}
 
 	};

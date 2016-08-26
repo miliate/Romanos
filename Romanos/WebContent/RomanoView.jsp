@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="converterNumero" method="post">
-Introduza o numero Inteiro: <input type="text" name="login" /> <br />
+<form action="RomanoViewTest.jsp" method="post">
+Introduza o numero Inteiro: <input type="text" name="valorAConverter" /> <br />
 
 <label name="numeroRomano"></label>
 <input type="submit" value="Gerar numero Romano" />
