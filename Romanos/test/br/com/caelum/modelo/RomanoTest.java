@@ -43,5 +43,17 @@ public class RomanoTest {
 
 		romano.converteInteiroEmRomano();
 	}
+	
+	
+	@Test
+	public void deveConverterQualquerNumeroQueSejaMenor4000() {
+		
+		      
+		romano.setNumeroInteiro("27");
+		romano.converteInteiroEmRomano();
+		
+		Assert.assertEquals("XXVII",romano.getNumeroRomano() );
+	}
+	
 
 }
