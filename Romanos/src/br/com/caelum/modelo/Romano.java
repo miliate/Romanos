@@ -3,7 +3,7 @@ package br.com.caelum.modelo;
 public class Romano {
 
 	private int numeroInteiro;
-
+private String numeroRomano;
 
 	public int getNumeroInteiro() {
 		return numeroInteiro;
@@ -13,6 +13,9 @@ public class Romano {
 		this.numeroInteiro = numeroInteiro;
 	}
 
+	public String getNumeroRomano() {
+		return numeroRomano;
+	}
 	
 	public void converteInteiroEmRomano()  {
 		// TODO Auto-generated method stub
@@ -22,7 +25,8 @@ public class Romano {
 			
 			throw new RuntimeException("O numero nao pode ser nulo");
 			
-		
+		if(this.numeroInteiro==1) 
+			this.numeroRomano="I";
 /*		switch(this.numeroInteiro){
 		case 1: return "I";
 		case 2: return "II";
@@ -33,4 +37,8 @@ public class Romano {
 		
 
 	}
+
+
+
+	
 }
